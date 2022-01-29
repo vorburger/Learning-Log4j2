@@ -1,13 +1,12 @@
 package ch.vorburger.log4j;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 public class App {
 
-    private final static Logger logger = LogManager.getLogger();
+    private final static org.apache.logging.log4j.Logger loggerV2 = org.apache.logging.log4j.LogManager.getLogger();
+    private final static org.apache.log4j.Logger loggerV1 = org.apache.log4j.Logger.getLogger(App.class);
 
     public static void main(String[] args) {
-        logger.info("hello, world");
+        loggerV2.info("hello, world via Log4j2");
+        loggerV1.info("hello, world via Log4j1");
     }
 }
