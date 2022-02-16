@@ -1,5 +1,9 @@
 # Learning-Log4j2
 
+## Background
+
+See https://github.com/vorburger/Log4j_CVE-2021-44228
+
 ## Providers & Priorities
 
     $ ./gradlew run
